@@ -1,0 +1,81 @@
+2021-10-18 09:46:08,669 DEBUG cd Tenant-Management && /usr/local/bin/virtualenv -q env -p python3
+2021-10-18 09:46:09,488 LOG Getting app frappe
+2021-10-18 09:46:09,489 DEBUG cd Tenant-Management/apps && git clone https://github.com/frappe/frappe.git --branch version-13 --depth 1 --origin upstream
+2021-10-18 09:46:34,913 LOG installing frappe
+2021-10-18 09:46:34,913 DEBUG Tenant-Management/env/bin/python -m pip install -q -U -e Tenant-Management/apps/frappe 
+2021-10-18 09:48:37,006 DEBUG cd Tenant-Management/apps/frappe && yarn install
+2021-10-18 09:49:40,282 DEBUG cd Tenant-Management/apps/frappe && yarn install
+2021-10-18 09:49:58,379 DEBUG cd Tenant-Management && bench build
+2021-10-18 09:49:58,705 INFO /usr/local/bin/bench build
+2021-10-18 09:50:16,474 LOG setting up backups
+2021-10-18 09:50:16,627 INFO Bench Tenant-Management initialized
+2021-10-18 11:08:29,419 INFO /usr/local/bin/bench new-site tm
+2021-10-18 11:14:26,136 INFO /usr/local/bin/bench new-site tm
+2021-10-18 11:17:10,995 INFO /usr/local/bin/bench new-site tm
+2021-10-18 11:19:59,806 INFO /usr/local/bin/bench start
+2021-10-18 11:20:02,203 INFO /usr/local/bin/bench worker --queue short
+2021-10-18 11:20:02,277 INFO /usr/local/bin/bench serve --port 8002
+2021-10-18 11:20:02,377 INFO /usr/local/bin/bench watch
+2021-10-18 11:20:02,424 INFO /usr/local/bin/bench worker --queue default
+2021-10-18 11:20:02,526 INFO /usr/local/bin/bench worker --queue long
+2021-10-18 11:20:02,523 INFO /usr/local/bin/bench schedule
+2021-10-18 14:10:12,166 INFO /usr/local/bin/bench new-site tm
+2021-10-18 14:12:55,688 INFO /usr/local/bin/bench new-app tenant_management
+2021-10-18 14:12:55,983 LOG creating new app tenant_management
+2021-10-18 14:13:37,367 LOG installing tenant_management
+2021-10-18 14:13:37,369 DEBUG ./env/bin/python -m pip install -q -U -e ./apps/tenant_management 
+2021-10-18 14:13:39,418 DEBUG bench build --app tenant_management
+2021-10-18 14:13:39,657 INFO /usr/local/bin/bench build --app tenant_management
+2021-10-18 14:15:36,617 INFO /usr/local/bin/bench start
+2021-10-18 14:15:37,987 INFO /usr/local/bin/bench worker --queue short
+2021-10-18 14:15:38,015 INFO /usr/local/bin/bench watch
+2021-10-18 14:15:38,053 INFO /usr/local/bin/bench serve --port 8002
+2021-10-18 14:15:38,149 INFO /usr/local/bin/bench worker --queue long
+2021-10-18 14:15:38,160 INFO /usr/local/bin/bench schedule
+2021-10-18 14:15:38,262 INFO /usr/local/bin/bench worker --queue default
+2021-10-18 14:28:29,958 INFO /usr/local/bin/bench set-config -g developer_mode true
+2021-10-18 14:28:39,526 INFO /usr/local/bin/bench start
+2021-10-18 14:28:41,430 INFO /usr/local/bin/bench schedule
+2021-10-18 14:28:41,475 INFO /usr/local/bin/bench worker --queue short
+2021-10-18 14:28:41,564 INFO /usr/local/bin/bench watch
+2021-10-18 14:28:41,569 INFO /usr/local/bin/bench serve --port 8002
+2021-10-18 14:28:41,596 INFO /usr/local/bin/bench worker --queue long
+2021-10-18 14:28:41,722 INFO /usr/local/bin/bench worker --queue default
+2021-10-18 14:34:05,307 INFO /usr/local/bin/bench --site tm install-app tenant_management
+2021-10-18 14:34:25,405 INFO /usr/local/bin/bench start
+2021-10-18 14:34:26,742 INFO /usr/local/bin/bench worker --queue default
+2021-10-18 14:34:26,913 INFO /usr/local/bin/bench watch
+2021-10-18 14:34:27,047 INFO /usr/local/bin/bench schedule
+2021-10-18 14:34:27,063 INFO /usr/local/bin/bench serve --port 8002
+2021-10-18 14:34:27,076 INFO /usr/local/bin/bench worker --queue long
+2021-10-18 14:34:27,102 INFO /usr/local/bin/bench worker --queue short
+2021-10-18 14:52:43,609 INFO /usr/local/bin/bench --site library.test mariadb
+2021-10-18 14:52:51,708 INFO /usr/local/bin/bench --site tm mariadb
+2021-10-19 07:50:52,420 INFO /usr/local/bin/bench start
+2021-10-19 07:50:57,181 INFO /usr/local/bin/bench worker --queue long
+2021-10-19 07:50:57,231 INFO /usr/local/bin/bench serve --port 8002
+2021-10-19 07:50:57,288 INFO /usr/local/bin/bench watch
+2021-10-19 07:50:57,291 INFO /usr/local/bin/bench schedule
+2021-10-19 07:50:57,337 INFO /usr/local/bin/bench worker --queue short
+2021-10-19 07:50:57,437 INFO /usr/local/bin/bench worker --queue default
+2021-10-19 07:53:56,116 INFO /usr/local/bin/bench start
+2021-10-19 07:53:57,930 INFO /usr/local/bin/bench serve --port 8002
+2021-10-19 07:53:57,980 INFO /usr/local/bin/bench schedule
+2021-10-19 07:53:57,997 INFO /usr/local/bin/bench watch
+2021-10-19 07:53:58,003 INFO /usr/local/bin/bench worker --queue default
+2021-10-19 07:53:58,039 INFO /usr/local/bin/bench worker --queue short
+2021-10-19 07:53:58,081 INFO /usr/local/bin/bench worker --queue long
+2021-10-19 07:55:24,840 INFO /usr/local/bin/bench start
+2021-10-19 07:55:25,774 INFO /usr/local/bin/bench worker --queue default
+2021-10-19 07:55:25,807 INFO /usr/local/bin/bench schedule
+2021-10-19 07:55:26,016 INFO /usr/local/bin/bench serve --port 8002
+2021-10-19 07:55:26,139 INFO /usr/local/bin/bench watch
+2021-10-19 07:55:26,238 INFO /usr/local/bin/bench worker --queue long
+2021-10-19 07:55:26,247 INFO /usr/local/bin/bench worker --queue short
+2021-10-19 16:31:41,280 INFO /usr/local/bin/bench start
+2021-10-19 16:31:42,967 INFO /usr/local/bin/bench worker --queue short
+2021-10-19 16:31:43,181 INFO /usr/local/bin/bench watch
+2021-10-19 16:31:43,268 INFO /usr/local/bin/bench serve --port 8002
+2021-10-19 16:31:43,289 INFO /usr/local/bin/bench worker --queue default
+2021-10-19 16:31:43,299 INFO /usr/local/bin/bench worker --queue long
+2021-10-19 16:31:43,311 INFO /usr/local/bin/bench schedule

@@ -2,5 +2,6 @@
  "db_name": "_a547db31280d14f0",
  "db_password": "aY9WLAEcTuzku5Q3",
  "db_type": "mariadb",
+ "encryption_key": "RSv04zU7u9Ka0yxiIw6J5dfCtqdA87s4SdZMjaulGqg=",
  "server_script_enabled": true
 }

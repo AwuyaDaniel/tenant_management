@@ -1,7 +1,2 @@
-2021-10-19 08:20:34,896 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for tm
-2021-10-19 08:20:35,038 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for tm
-2021-10-19 08:20:35,417 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for tm
-2021-10-19 08:20:35,546 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for tm
-2021-10-19 08:20:35,953 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for tm
-2021-10-19 08:20:36,069 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for tm
-2021-10-19 08:20:36,368 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for tm
+2021-10-19 11:45:46,474 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for tm
+2021-10-19 11:45:48,259 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for tm

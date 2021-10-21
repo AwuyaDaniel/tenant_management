@@ -1,0 +1,3 @@
+[submodule "apps/apps/tenant_management"]
+	path = apps/apps/tenant_management
+	url = https://github.com/AwuyaDaniel/tenant_management.git
